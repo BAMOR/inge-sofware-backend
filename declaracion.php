@@ -9,14 +9,15 @@ header("Access-Control-Allow-Headers: Content-Type");
 // ============================================
 define('API_PERSONAS_URL', 'http://192.168.0.106/persona.php');
 
-$host     = "localhost";
-$dbname   = "gestion_tributaria";
+$host     = "zephyr.proxy.rlwy.net";
+$dbname   = "railway";
 $username = "root";
-$password = "";
+$password = "iqqApHTdgAqeSBoXaiTXgMKLTvBHBZWh";
+$port     = 32217;
 
 try {
     $pdo = new PDO(
-        "mysql:host=$host;dbname=$dbname;charset=utf8mb4",
+        "mysql:host=$host;port=$port;dbname=$dbname;charset=utf8mb4",
         $username,
         $password,
         [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]
