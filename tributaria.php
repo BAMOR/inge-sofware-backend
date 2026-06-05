@@ -9,15 +9,14 @@ header("Access-Control-Allow-Headers: Content-Type");
 // ============================================
 
 // URL de la API 1 (personas) — cambia la IP por la de tu compañero
-define('API_PERSONAS_URL', 'http://192.168.0.106/persona.php');
+define('API_PERSONAS_URL', 'http://mxx.60c.mytemp.website/projecto/api/persona.php');
 
 // Base de datos propia
-$host     = "zephyr.proxy.rlwy.net";
-$dbname   = "railway";
-$username = "root";
-$password = "iqqApHTdgAqeSBoXaiTXgMKLTvBHBZWh";
-$port     = 32217;
-
+$host     = "mysql-2063d834-paulojosueb58-d2dd.i.aivencloud.com";
+$dbname   = "defaultdb";
+$username = "avnadmin";
+$password = "AVNS_AbOSGBZqmCMLd_ANW3e";
+$port     = 21671;
 try {
     $pdo = new PDO(
         "mysql:host=$host;port=$port;dbname=$dbname;charset=utf8mb4",
