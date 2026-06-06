@@ -1,7 +1,7 @@
 <?php
 // Configuración
-$API_BASE     = 'https://inge-sofware-backend.onrender.com';
-$API_PERSONAS = 'http://mxx.60c.mytemp.website/projecto/api/persona.php';
+$API_BASE     = 'proxy.php?url=https://inge-sofware-backend.onrender.com';
+$API_PERSONAS = 'proxy.php?url=http://mxx.60c.mytemp.website/projecto/api/persona.php';
 ?>
 <!DOCTYPE html>
 <html lang="es">
